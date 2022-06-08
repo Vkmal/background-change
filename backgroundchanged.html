@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background changed</title>
+    <style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-align: justify;
+        }
+        p{
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #violet{
+                background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#fbf9f9')" ></span>
+        <span class="btn" id="aqua" onclick="changeBG('#15b0eb')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')" ></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">the background changed with the help of java script </h1>
+
+
+
+<p class="text">     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium nam beatae nobis necessitatibus voluptatem magni non aliquid est quas ratione, nihil culpa deleniti voluptate, perspiciatis corrupti nostrum porro praesentium laborum ducimus ex. Numquam rem repellat illo dicta atque, molestias facere aut suscipit veniam cumque dolore doloremque, iusto quos accusantium eaque, eveniet ullam eos alias enim ipsum neque unde earum ipsam velit. Excepturi obcaecati natus expedita sit a saepe sapiente numquam impedit autem veniam nisi ea delectus tempore, accusamus fuga quisquam facere dicta cum nemo nobis? Earum facere facilis adipisci hic aut itaque nostrum et quos similique maiores pariatur recusandae impedit explicabo odit fugit necessitatibus, esse corporis est nulla ea. Atque quisquam magni placeat quia iste iure, delectus dignissimos aspernatur illo veniam inventore quae fuga. Distinctio fugit recusandae eligendi rem ipsam? Sequi natus fugit saepe architecto maxime aliquid repellendus omnis ducimus possimus dolorem, aut pariatur mollitia? Omnis officia eaque, tenetur perferendis hic modi voluptate error est ipsum molestias sit consequatur autem nesciunt, aperiam impedit, voluptas dignissimos repellat ipsam veritatis incidunt numquam maiores aliquid? Quae esse voluptas perferendis eaque est, dolore dolorem eligendi saepe ratione aliquam dolor, facilis exercitationem qui fuga illo minima. Perferendis voluptate similique deserunt debitis nisi et consequatur ab sequi. Labore laborum quisquam porro iusto dolorem dolores, nemo vero dignissimos minus sint aperiam harum impedit sunt obcaecati voluptas perspiciatis nesciunt magni beatae ipsum cum. Quam voluptatem quos, commodi minus accusamus ducimus pariatur nihil assumenda adipisci architecto est corporis veniam magnam velit dolor voluptatibus unde ea dignissimos nisi tempore omnis? Assumenda omnis labore ad, consectetur beatae natus iste!!
+
+</p>
+<script>
+    function changeBG(color){
+            document.body.style.background = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+    }
+ 
+</script>  
+    
+</body>
+</html>
